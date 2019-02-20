@@ -11,20 +11,20 @@
 - belongs_to :group
 - belongs_to :user
 
-## userテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, foreign_key: true|
-|e-mail|reference|null: false, foreign_key: true|
+|name|string|null: false|
+|e-mail|string|null: false|
 |password|integer|null: false|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- has_many :groups through :members
+- has_many :members
 
 
-## messageテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -33,10 +33,9 @@
 |image|integer|null: false|
 
 ### Association
-- has_many :texts
 - belongs_to :user
 
-##groupテーブル
+##groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -44,5 +43,5 @@
 |group|reference|null: false, foreign_key: true|
 
 ### Association
-- has_many :groups
-- belongs_to :user
+- has_many :users through :members
+- has_many :members
