@@ -15,8 +15,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|e-mail|string|null: false,add_index :email|
+|name|string|null: false,add_index :email|
+|e-mail|string|null: false|
 |password|integer|null: false|
 
 ### Association
@@ -33,6 +33,8 @@
 |user|reference|null: false, foreign_key: true|
 |text|integer|null: false|
 |image|integer|null: false|
+|group|reference|null: false, foreign_key: true|
+
 
 ### Association
 - belongs_to :user
@@ -47,3 +49,4 @@
 ### Association
 - has_many :users through :members
 - has_many :members
+- has_many :messages
