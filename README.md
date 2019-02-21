@@ -16,7 +16,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|e-mail|string|null: false|
+|e-mail|string|null: false,add_index :email|
 |password|integer|null: false|
 
 ### Association
@@ -36,13 +36,13 @@
 
 ### Association
 - belongs_to :user
-- has_many :members
+- belongs_to :group
 
 ##groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users through :members
