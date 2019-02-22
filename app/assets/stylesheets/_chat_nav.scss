@@ -1,0 +1,34 @@
+.chat_nav{
+  height:80px;
+  font-size:20px;
+  color:#333333;
+  text-align: left;
+  margin-top:35px;
+  margin-bottom:0;
+  border-bottom:solid 2px #eeeeee;
+  p{
+     font-size:20px;
+     color:#333333;
+     margin-left:40px;
+  }
+  .chat_main_btn{
+    box-sizing: border-box;
+    position: absolute;
+    top:60px;
+    right:40px;
+    font-size: 15px;
+    color: #38aef0;
+    background: #FFF;
+    border: solid 1px #38aef0;
+    padding: 8px 20px;
+
+  }
+  .member_class p{
+      position:absolute;
+      top:120px;
+      display:inline-block;
+      font-size: 13px;
+      color:#999999;
+  }
+}
+

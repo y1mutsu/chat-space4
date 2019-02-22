@@ -1,0 +1,32 @@
+.chat_side_name{
+  display:flex;
+  ul{
+    display:flex;
+    margin-left:110px;
+
+      li{
+        display:block;
+      }
+      a:link{
+        color:white;
+        margin-right:10px;
+      }
+      a:visited{
+        color:white;
+      }
+  }
+}
+
+.form_box{
+  a:link{
+    color:black;
+    position:absolute;
+    top:30px;
+    left:65%;
+    font-size:25px;
+  }
+  a:visited{
+    color:black;
+  }
+}
+

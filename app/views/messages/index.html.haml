@@ -1,0 +1,56 @@
+%h2.header
+  チャットグループが作成されました
+.chat_space
+  .chat_side_nav
+    .chat_side_name
+      %p.name
+        aaaaaaaaaaa
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__edit-user
+          %a{href: "#"}
+            =fa_icon "edit"
+
+        %li.side-header__box__menu__new-group
+          %a{href: "#"}
+            =fa_icon "cog"
+
+    %ul.side_chat
+      %li.side_list
+        %p.side_list__chat-name aaa
+        %p.side_list__chat-text おはよう
+      %li.side_list
+        %p.side_list__chat-name aaa
+        %p.side_list__chat-text おはよう
+      %li.side_list
+        %p.side_list__chat-name aaa
+        %p.side_list__chat-text おはよう
+      %li.side_list
+        %p.side_list__chat-name aaa
+        %p.side_list__chat-text おはよう
+  .chat_main
+    .chat_nav
+      %p sampleグループ
+      .chat_main_btn
+        Edit
+      .member_class
+        %P Member:aaa
+    .message
+      .upper-info
+        %p.upper-info__talker
+          aaa
+        %p.upper-info__date
+          2039/02/15(wed) 15:50:45
+      .message__text
+        おはよう！
+
+    .chat_footer
+      %form
+        .form_box
+          %input{type: "text", placeholder: "type a message"}
+          %a{href: "#"}
+            =fa_icon "image"
+
+        %input{type: "submit",name:"commit",value: "Send",class: "submitBtn"}
+      / =form_for @message do |f|
+      / = f.text_field :question_title, :class => "input form-control",:placeholder => "質問のタイトル", :type => "text"
+

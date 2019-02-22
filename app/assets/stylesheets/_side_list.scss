@@ -1,0 +1,27 @@
+.side_chat{
+    background-color:#2f3e51;
+    height:100vw;
+    box-sizing: border-box;
+    width:100%;
+}
+.side_list{
+    display:block;
+
+  &__chat-name{
+    display: inline-block;
+    font-size:15px;
+    text-align: left;
+    color:#FFFFFF;
+    margin-top:40px;
+    margin-bottom:5px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+  &__chat-text{
+    display: block;
+    font-size:11px;
+    color:#FFFFFF;
+    margin-left:20px;
+    margin-right:20px;
+  }
+}

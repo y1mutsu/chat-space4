@@ -1,0 +1,38 @@
+.message{
+    height: calc(100vh - 190px);
+    padding: 46px 40px;
+    background-color: #fafafa;
+    overflow: scroll;
+  }
+
+.upper-info{
+    padding:0;
+    display:flex;
+
+
+    &__talker{
+      display:inline-block;
+      width:5em;
+      box-sizing: border-box;
+     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+      padding:0;
+      color: #434a54;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &__date{
+      display: inline-block;
+      color: #999999;
+      font-size: 12px;
+      margin:0;
+    }
+}
+.message__text{
+    display:block;
+    font-size:14px;
+}
+
