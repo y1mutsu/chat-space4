@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-          sessions: 'users/sessions'
-        }
-
+  devise_for :users
   get 'messages' => 'messages#index'
-
+  resources :users, only: [:edit, :update]
 end
