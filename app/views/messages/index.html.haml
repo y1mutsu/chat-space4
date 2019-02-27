@@ -4,16 +4,14 @@
   .chat_side_nav
     .chat_side_name
       %p.name
-        aaaaaaaaaaa
+        =current_user.name
       %ul.side-header__box__menu
-        %li.side-header__box__menu__edit-user
-          %a{href: "#"}
+        = link_to "#" do
+          %li.side-header__box__menu__edit-user
             =fa_icon "edit"
-
-        %li.side-header__box__menu__new-group
-          %a{href: "#"}
+        = link_to edit_user_path(current_user) do
+          %li.side-header__box__menu__new-group
             =fa_icon "cog"
-
     %ul.side_chat
       %li.side_list
         %p.side_list__chat-name aaa
@@ -51,6 +49,5 @@
             =fa_icon "image"
 
         %input{type: "submit",name:"commit",value: "Send",class: "submitBtn"}
-      / =form_for @message do |f|
-      / = f.text_field :question_title, :class => "input form-control",:placeholder => "質問のタイトル", :type => "text"
+
 
