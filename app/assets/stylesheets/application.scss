@@ -1,12 +1,14 @@
 @import "./reset";
-@import "mixn/clearfix";
+@import "mixns/mixin";
 @import "font-awesome";
 @import "modules/_chat_main";
 @import "modules/_sidenav";
+// @import "modules/side_bar";
 @import "modules/_side_list";
 @import "modules/_chat_nav";
 @import "modules/_main_message";
 @import "modules/_chat_footer";
 @import "modules/fa_icon";
 @import "modules/user";
-@import "modules/_flash"
+@import "modules/_flash";
+@import "modules/group";

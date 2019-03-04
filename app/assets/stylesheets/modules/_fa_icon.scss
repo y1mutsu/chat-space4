@@ -1,18 +1,11 @@
-.chat_side_name{
+.chat_side_name,.header__lists{
   display:flex;
   ul{
-    display:flex;
     margin-left:110px;
-
-      li{
+      li > a{
         display:block;
-      }
-      a:link{
         color:white;
         margin-right:10px;
-      }
-      a:visited{
-        color:white;
       }
   }
 }
