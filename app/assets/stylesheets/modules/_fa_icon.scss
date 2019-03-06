@@ -11,15 +11,23 @@
 }
 
 .form_box{
-  a:link{
-    color:black;
-    position:absolute;
-    top:30px;
-    left:65%;
+  .icon{
     font-size:25px;
+    position:absolute;
+    top:10px;
+    right: 20px;
   }
-  a:visited{
-    color:black;
+  .hidden{
+    display: none;
   }
 }
+//   .hidden{
+//     position:absolute;
+//     top:30px;
+//     left:60%;
+//     display:inline-block;
+//     overflow: hidden;
+//     cursor :pointer;
+//   }
+// }
 
