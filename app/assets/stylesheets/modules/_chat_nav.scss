@@ -6,8 +6,7 @@
   margin-top:35px;
   margin-bottom:0;
   border-bottom:solid 2px #eeeeee;
-  p{
-     font-size:20px;
+  h3{
      color:#333333;
      margin-left:40px;
   }
@@ -21,14 +20,38 @@
     background: #FFF;
     border: solid 1px #38aef0;
     padding: 8px 20px;
-
+    display: flex;
   }
-  .member_class p{
-      position:absolute;
-      top:120px;
-      display:inline-block;
-      font-size: 13px;
-      color:#999999;
+  .member__class{
+    display:flex;
+
+      &__box{
+        display:inline-block;
+        color: #999999;
+        font-size: 13px;
+        position:absolute;
+        top:80px;
+        left:340px;
+    }
+      &__name{
+        display: inline-block;
+        color: #999999;
+        font-size: 13px;
+        position:absolute;
+        top:80px;
+        left:410px;
+    }
   }
 }
 
+
+// .member_box{
+//   color: #999999;
+//   font-size: 13px;
+// }
+
+
+// .member_class < .member_box p,.member_name p{
+//   color: #999999;
+//   font-size: 13px;
+// }
