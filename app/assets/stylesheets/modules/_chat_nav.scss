@@ -1,13 +1,15 @@
 .chat_nav{
   height:80px;
   font-size:20px;
-  color:#333333;
+  color: $black;
   text-align: left;
   margin-top:35px;
   margin-bottom:0;
-  border-bottom:solid 2px #eeeeee;
+  border-bottom:solid 2px $light_gray;
+  // background-color: $dark_blue;
+
   h3{
-     color:#333333;
+     color: $black;
      margin-left:40px;
   }
   .chat_main_btn{
@@ -16,9 +18,9 @@
     top:60px;
     right:40px;
     font-size: 15px;
-    color: #38aef0;
-    background: #FFF;
-    border: solid 1px #38aef0;
+    color: $blue;
+    background: $white;
+    border: solid 1px $blue;
     padding: 8px 20px;
     display: flex;
   }
@@ -27,7 +29,7 @@
 
       &__box{
         display:inline-block;
-        color: #999999;
+        color: $glay;
         font-size: 13px;
         position:absolute;
         top:80px;
@@ -35,7 +37,7 @@
     }
       &__name{
         display: inline-block;
-        color: #999999;
+        color: $glay;
         font-size: 13px;
         position:absolute;
         top:80px;
@@ -43,15 +45,3 @@
     }
   }
 }
-
-
-// .member_box{
-//   color: #999999;
-//   font-size: 13px;
-// }
-
-
-// .member_class < .member_box p,.member_name p{
-//   color: #999999;
-//   font-size: 13px;
-// }

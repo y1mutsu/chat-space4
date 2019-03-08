@@ -1,22 +1,22 @@
 .side_chat{
-    background-color:#2f3e51;
+    background-color: $dark_blue;;
     height:100vw;
     box-sizing: border-box;
     width:100%;
 }
 .groups {
-  background-color: #2f3e51;
+  background-color: $dark_blue;
   height: calc(100vh - 100px);
   padding: 0 20px;
   .group {
     box-sizing: border-box;
     padding: 20px 0 40px;
     &__name {
-      color: #FFFFFF;
+      color: $white;
       font-size: 15px;
     }
     &__message{
-      color: #FFFFFF;
+      color: $white;
       font-size: 12px;
       margin-top: 5px;
     }
