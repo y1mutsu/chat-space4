@@ -23,7 +23,7 @@
       }
     }
     .right-header {
-      border: 1px solid #99FFFF;
+      border: 1px solid $light_blue;
       color: #C0C0C0;
       float: right;
       height: 40px;
@@ -31,7 +31,7 @@
       margin-top: 28px;
       padding: 0 20px;
       &__button {
-        color: #99FFFF;
+        color: $light_blue;
         text-decoration: none;
       }
     }
@@ -46,7 +46,7 @@
       .upper-message {
         display: flex;
         &__user-name {
-          color: #000000;
+          color:$bblack;
           font-size: 16px;
           font-weight: bold;
         }
@@ -59,7 +59,7 @@
       .lower-message {
         margin-top: 10px;
         &__content {
-          color: #000000;
+          color: $bblack;
           font-size: 14px;
           margin-bottom: 40px;
         }
@@ -68,7 +68,7 @@
   }
 
   .form {
-    background-color: #DDDDDD;
+    background-color: $light_gray;
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
@@ -79,7 +79,7 @@
       width: calc(100% - 150px);
     }
     &__mask {
-      background-color: #FFFFFF;
+      background-color: $white;
       float: left;
       height: 50px;
       padding-right: 10px;
@@ -92,9 +92,9 @@
       }
     }
     &__submit {
-      background-color: #99FFFF;
+      background-color: $light_blue;
       border: none;
-      color: #FFFFFF;
+      color: $white;
       float: right;
       font-size: 16px;
       height: 50px;

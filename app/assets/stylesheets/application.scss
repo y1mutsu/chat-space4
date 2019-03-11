@@ -1,6 +1,7 @@
 @import "./reset";
-@import "mixns/mixin";
 @import "font-awesome";
+@import "config/colors";
+@import "mixns/mixin";
 @import "modules/_chat_main";
 @import "modules/_sidenav";
 // @import "modules/side_bar";
@@ -12,3 +13,4 @@
 @import "modules/user";
 @import "modules/_flash";
 @import "modules/group";
+
