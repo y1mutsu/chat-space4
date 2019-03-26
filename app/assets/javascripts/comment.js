@@ -29,6 +29,7 @@ $(document).on('turbolinks:load', function() {
       $('.message').append(html)
       $('.form__message').val('');
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight }, 500);
+      $('.new_message')[0].reset()
     })
     .fail(function(){
       alert('投稿がありません');
@@ -36,5 +37,5 @@ $(document).on('turbolinks:load', function() {
     .always(function(){
       $(".submitBtn").prop('disabled', false);
     });
-  })
+  });
 });
