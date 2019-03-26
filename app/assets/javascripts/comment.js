@@ -1,6 +1,5 @@
 $(document).on('turbolinks:load', function() {
  function buildHTML(message){
-  console.log(message)
     var html = `<div class="message_contents">
                   <div class="upper-info">
                       <p class="upper-info__talker">${message.user_name}</p>
@@ -29,7 +28,7 @@ $(document).on('turbolinks:load', function() {
       $('.message').append(html)
       $('.form__message').val('');
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight }, 500);
-      $('.new_message')[0].reset()
+      $('.new_message')[0].reset();
     })
     .fail(function(){
       alert('投稿がありません');
