@@ -1,6 +1,5 @@
 .side_chat{
-    background-color: $dark_blue;;
-    height:100vw;
+    height:100%;
     box-sizing: border-box;
     width:100%;
 }
@@ -8,6 +7,7 @@
   background-color: $dark_blue;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
   .group {
     box-sizing: border-box;
     padding: 20px 0 40px;

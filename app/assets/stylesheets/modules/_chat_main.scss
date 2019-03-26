@@ -7,12 +7,11 @@
   color:$white;
 }
 .chat_space{
-  width: 100%;
   display:flex;
   .chat_main{
     width: calc(100% - 300px);
-    height:100vw;
     margin:0 auto;
     float: right;
+    background-color:$white_cleam;
   }
 }
