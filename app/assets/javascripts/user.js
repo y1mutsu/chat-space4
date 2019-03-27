@@ -29,7 +29,6 @@ $(document).on('turbolinks:load', function() {
 
   $("#user-search-field").on("input", function() {
     var input = $("#user-search-field").val();
-    console.log(user_list)
      $.ajax({
       type: 'GET',
       url: '/users',
@@ -58,7 +57,6 @@ $(document).on('turbolinks:load', function() {
     var id = $(this).data('user-id');
     var name = $(this).data('user-name');
     user_list.push(id);
-    console.log(user_list)
     addUser(name,id)
     $(this).parent().remove();
   })
@@ -67,6 +65,5 @@ $(document).on('turbolinks:load', function() {
     var user_id = $(this).data('user-id');
     user_list = user_list.filter(id => id != user_id)
     $(this).parent().remove();
-    console.log(user_list)
   })
 })
