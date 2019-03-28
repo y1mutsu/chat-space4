@@ -1,6 +1,6 @@
 $(document).on('turbolinks:load', function() {
  function buildHTML(message){
-    var html = `<div class="message_contents">
+    var html = `<div class="message_contents" data-id="${message.id}">
                   <div class="upper-info">
                       <p class="upper-info__talker">${message.user_name}</p>
                     <p class="upper-info__date">${message.date}</p>
@@ -37,4 +37,27 @@ $(document).on('turbolinks:load', function() {
       $(".submitBtn").prop('disabled', false);
     });
   });
+    $(function(){
+    setInterval(update, 10000);
+
+    })
+    function update(){
+    var messageId = $('.message_contents:last').data('id');
+    $.ajax({
+      url: location.pathname,
+      type: 'GET',
+      data: { message_id: messageId },
+      dataType: 'json'
+    })
+    .done(function(messages){
+      messages.forEach(function(message){
+      var html = buildHTML(message);
+      $('.message').append(html)
+       });
+
+      $('.form__message').val('');
+      $('.message').animate({scrollTop: $('.message')[0].scrollHeight }, 500);
+      $('.new_message')[0].reset();
+    })
+  }
 });
