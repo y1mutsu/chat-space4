@@ -38,10 +38,9 @@ $(document).on('turbolinks:load', function() {
     });
   });
     $(function(){
-    setInterval(update, 10000);
-
-    })
-    function update(){
+    setInterval(update, 10000)
+    });
+    function update(url){
     var messageId = $('.message_contents:last').data('id');
     $.ajax({
       url: location.pathname,
@@ -57,7 +56,7 @@ $(document).on('turbolinks:load', function() {
 
       $('.form__message').val('');
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight }, 500);
-      $('.message')[0].reset();
+      $('.new_message')[0].reset();
     })
   }
 });
