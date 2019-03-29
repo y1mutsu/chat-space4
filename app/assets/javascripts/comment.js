@@ -38,16 +38,16 @@ $(document).on('turbolinks:load', function() {
     });
   });
     $(function(){
-    setInterval(update, 10000)
+    setInterval(update, 10000);
     });
-    function update(url){
+    function update(){
+    var html = $(this).attr('action')
     var messageId = $('.message_contents:last').data('id');
     $.ajax({
       url: location.pathname,
       type: 'GET',
       data: { message_id: messageId },
       dataType: 'json',
-      validates :url, format: /\A#{URI::regexp(%w(http https))}\z/
     })
     .done(function(messages){
       messages.forEach(function(message){
