@@ -57,7 +57,7 @@ $(document).on('turbolinks:load', function() {
 
       $('.form__message').val('');
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight }, 500);
-      $('.new_message')[0].reset();
+      $('.message')[0].reset();
     })
   }
 });
