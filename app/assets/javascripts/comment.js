@@ -46,7 +46,8 @@ $(document).on('turbolinks:load', function() {
       url: location.pathname,
       type: 'GET',
       data: { message_id: messageId },
-      dataType: 'json'
+      dataType: 'json',
+      validates :url, format: /\A#{URI::regexp(%w(http https))}\z/
     })
     .done(function(messages){
       messages.forEach(function(message){
