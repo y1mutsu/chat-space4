@@ -2,6 +2,7 @@
     height:100%;
     box-sizing: border-box;
     width:100%;
+    margin:10px;
 }
 .groups {
   background-color: $dark_blue;
@@ -10,7 +11,7 @@
   overflow: scroll;
   .group {
     box-sizing: border-box;
-    padding: 20px 0 40px;
+    padding: 15px 30px 40px;
     &__name {
       color: $white;
       font-size: 15px;
@@ -19,6 +20,7 @@
       color: $white;
       font-size: 12px;
       margin-top: 5px;
+      padding-bottom: 50px;
     }
   }
 }

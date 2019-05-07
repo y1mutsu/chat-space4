@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function() {
                     <p class="upper-info__date">${message.date}</p>
                   </div>
                   <div class="message__text">${message.content}</div>
-                  <img class="lower-message__image" src="/uploads/message/image>${message.content.image}
+                  <img class="lower-message__image" src=${message.image}
                 </div>`
 
     return html;
